@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+.darkMode {
+    background: #222;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+    transition: .5s;
+}
+.darkMode .box {
+    background: #292929;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile .imgBx {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #f00;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile .text {
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #333;
+}
+.darkMode .profile .text {
+    color: #fff;
+}
+
+.profile .text span {
+    font-weight: 600;
+    font-size: .8em;
+    color: #555;
+}
+.darkMode .text span {
+    color: aliceblue;
+}
+
+.menu {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 1em;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.menu li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li label span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    color: #777;
+}
+
+.darkMode .menu li label span {
+    color: #fff2f2;
+}
+
+.menu li label span ion-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.menu li label .action {
+    position: relative;
+}
+
+.menu li label .action input {
+    appearance: none;
+}
+
+.menu li label .action i {
+    position: relative;
+    width: 30px;
+    height: 15px;
+    background: #ddd;
+    border-radius: 15px;
+}
+
+.menu li label .action input:checked ~ i {
+    background: #2aa0ff;
+}
+
+.menu li label .action i::before {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu li label .action input:checked ~ i::before {
+    left: calc(100% - 12.5px);
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
